@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SynGen — Genomic Sequencing Services</title>
+  <meta name="description" content="SynGen delivers high-throughput genomic sequencing services to research institutions and universities across Thailand." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <img src="logo-white.png" alt="SynGen" class="nav__logo-img nav__logo-img--white" />
+        <img src="logo-color.png" alt="SynGen" class="nav__logo-img nav__logo-img--color" />
+      </a>
+      <div class="nav__links">
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#process" data-i18n="nav.process">Process</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#contact" class="nav__cta" data-i18n="nav.contact">Contact</a>
+      </div>
+      <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+        <span class="lang-toggle__label" id="langLabel">TH</span>
+      </button>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#process" data-i18n="nav.process">Process</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas class="hero__canvas" id="heroCanvas"></canvas>
+    <div class="hero__inner">
+      <div class="hero__tag">
+        <span class="dot"></span>
+        <span data-i18n="hero.tag">Genomic Sequencing · Thailand</span>
+      </div>
+      <h1 class="hero__title">
+        <span class="hero__title-line" data-i18n="hero.line1">Precision</span>
+        <span class="hero__title-line hero__title-line--accent" data-i18n="hero.line2">Sequencing</span>
+        <span class="hero__title-line" data-i18n="hero.line3">for Science.</span>
+      </h1>
+      <p class="hero__sub" data-i18n="hero.sub">High-throughput genomic sequencing services<br>for research institutions and universities across Thailand.</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary" data-i18n="hero.cta1">Request a Quote</a>
+        <a href="#services" class="btn btn--ghost" data-i18n="hero.cta2">Our Services</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat">
+          <div class="stat__num">48h</div>
+          <div class="stat__label" data-i18n="stat.turnaround">Turnaround (Sanger)</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">99.9%</div>
+          <div class="stat__label" data-i18n="stat.accuracy">Base Call Accuracy</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">6+</div>
+          <div class="stat__label" data-i18n="stat.platforms">Sequencing Platforms</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">ISO</div>
+          <div class="stat__label" data-i18n="stat.certified">Certified Laboratory</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-i18n="services.tag">01 — Services</div>
+        <h2 class="section-title" data-i18n="services.title">What We Offer</h2>
+        <p class="section-sub" data-i18n="services.sub">End-to-end sequencing solutions — from sample receipt to final report — tailored for academic and research demands.</p>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="24" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="16" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="26" cy="16" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M16 11v10M9 16h14" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <div class="service-card__num">01</div>
+          <h3 data-i18n="svc1.title">16S Amplicon Sequencing</h3>
+          <p data-i18n="svc1.desc">Microbial community profiling via 16S rRNA gene amplicon sequencing. Ideal for diversity analysis, microbiome studies, and environmental samples.</p>
+          <div class="service-card__tags">
+            <span>16S rRNA</span>
+            <span>ITS</span>
+            <span>Microbiome</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M4 10h24M4 16h18M4 22h21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="28" cy="16" r="2" fill="currentColor"/><circle cx="25" cy="22" r="2" fill="currentColor"/></svg>
+          </div>
+          <div class="service-card__num">02</div>
+          <h3 data-i18n="svc2.title">Next-Generation Sequencing</h3>
+          <p data-i18n="svc2.desc">High-throughput short-read sequencing for whole genome, transcriptome, and targeted applications. Fast turnaround with exceptional depth.</p>
+          <div class="service-card__tags">
+            <span>WGS</span>
+            <span>RNA-seq</span>
+            <span>Illumina</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M4 16 Q10 6 16 16 Q22 26 28 16" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/><circle cx="4" cy="16" r="2" fill="currentColor"/><circle cx="16" cy="16" r="2" fill="currentColor"/><circle cx="28" cy="16" r="2" fill="currentColor"/></svg>
+          </div>
+          <div class="service-card__num">03</div>
+          <h3 data-i18n="svc3.title">Third-Generation Sequencing</h3>
+          <p data-i18n="svc3.desc">Long-read sequencing for resolving complex genomic regions, full-length transcripts, structural variants, and complete genome assembly.</p>
+          <div class="service-card__tags">
+            <span>PacBio</span>
+            <span>Nanopore</span>
+            <span>Long Read</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 32 32" fill="none"><rect x="6" y="6" width="8" height="8" stroke="currentColor" stroke-width="1.5"/><rect x="18" y="6" width="8" height="8" stroke="currentColor" stroke-width="1.5"/><rect x="6" y="18" width="8" height="8" stroke="currentColor" stroke-width="1.5"/><rect x="18" y="18" width="8" height="8" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <div class="service-card__num">04</div>
+          <h3 data-i18n="svc4.title">Bioinformatics Analysis</h3>
+          <p data-i18n="svc4.desc">End-to-end data processing, variant annotation, and custom analysis pipelines delivered with publication-ready outputs and full documentation.</p>
+          <div class="service-card__tags">
+            <span>Custom Pipelines</span>
+            <span>Variant Calling</span>
+            <span>Reports</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-i18n="process.tag">02 — Process</div>
+        <h2 class="section-title" data-i18n="process.title">How It Works</h2>
+        <p class="section-sub" data-i18n="process.sub">A streamlined workflow designed around the needs of research timelines.</p>
+      </div>
+      <div class="process__steps">
+        <div class="process__step">
+          <div class="process__step-num">01</div>
+          <div class="process__step-content">
+            <h3 data-i18n="step1.title">Submit Request</h3>
+            <p data-i18n="step1.desc">Complete our online form or contact us directly. Specify your project goals, sample type, and timeline requirements.</p>
+          </div>
+        </div>
+        <div class="process__connector"></div>
+        <div class="process__step">
+          <div class="process__step-num">02</div>
+          <div class="process__step-content">
+            <h3 data-i18n="step2.title">Sample Submission</h3>
+            <p data-i18n="step2.desc">Ship or hand-deliver your samples with our standardized submission kit. We handle quality assessment upon arrival.</p>
+          </div>
+        </div>
+        <div class="process__connector"></div>
+        <div class="process__step">
+          <div class="process__step-num">03</div>
+          <div class="process__step-content">
+            <h3 data-i18n="step3.title">Library Preparation</h3>
+            <p data-i18n="step3.desc">Samples are processed using validated library prep protocols optimised for your chosen sequencing approach.</p>
+          </div>
+        </div>
+        <div class="process__connector"></div>
+        <div class="process__step">
+          <div class="process__step-num">04</div>
+          <div class="process__step-content">
+            <h3 data-i18n="step4.title">Sequencing & Analysis</h3>
+            <p data-i18n="step4.desc">High-throughput sequencing followed by rigorous bioinformatics analysis and quality control checks.</p>
+          </div>
+        </div>
+        <div class="process__connector"></div>
+        <div class="process__step">
+          <div class="process__step-num">05</div>
+          <div class="process__step-content">
+            <h3 data-i18n="step5.title">Data Delivery</h3>
+            <p data-i18n="step5.desc">Receive your data via our secure portal with comprehensive reports, raw files, and ongoing support from our scientists.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__left">
+          <div class="section-tag" data-i18n="about.tag">03 — About</div>
+          <h2 class="section-title" data-i18n="about.title">Built for Research.</h2>
+          <p data-i18n="about.p1">SynGen was founded to close the gap between cutting-edge genomic technology and the research institutions that need it most. Based in Thailand, we serve universities and public research centres across Southeast Asia.</p>
+          <p data-i18n="about.p2">Our team combines deep expertise in molecular biology, next-generation sequencing, and bioinformatics — ensuring that every dataset we deliver meets the standard required for publication and grant reporting.</p>
+          <a href="#contact" class="btn btn--primary" data-i18n="about.cta">Work With Us</a>
+        </div>
+        <div class="about__right">
+          <div class="about__visual">
+            <canvas id="dnaCanvas"></canvas>
+          </div>
+          <div class="about__facts">
+            <div class="fact">
+              <div class="fact__icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <div>
+                <div class="fact__title" data-i18n="fact1.title">Thailand-Based</div>
+                <div class="fact__desc" data-i18n="fact1.desc">Local support, global standards</div>
+              </div>
+            </div>
+            <div class="fact">
+              <div class="fact__icon">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <div class="fact__title" data-i18n="fact2.title">Fast Turnaround</div>
+                <div class="fact__desc" data-i18n="fact2.desc">Results aligned to your project schedule</div>
+              </div>
+            </div>
+            <div class="fact">
+              <div class="fact__icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <div>
+                <div class="fact__title" data-i18n="fact3.title">Publication Ready</div>
+                <div class="fact__desc" data-i18n="fact3.desc">Data quality that meets journal standards</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-i18n="contact.tag">04 — Contact</div>
+        <h2 class="section-title" data-i18n="contact.title">Start a Project</h2>
+        <p class="section-sub" data-i18n="contact.sub">Tell us about your research. We'll get back to you within one business day.</p>
+      </div>
+      <div class="contact__inner">
+        <form class="contact__form" id="contactForm" novalidate>
+          <input type="hidden" name="access_key" value="8dae1f3a-13e1-4b5c-a079-8a4b1ebc4076" />
+          <input type="hidden" name="subject" value="New inquiry from SynGen website" />
+          <input type="hidden" name="from_name" value="SynGen Website" />
+          <input type="hidden" name="replyto" value="syngen.th@gmail.com" />
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="form.name">Full Name</label>
+              <input type="text" name="name" required placeholder="Dr. Jane Smith" />
+            </div>
+            <div class="form-group">
+              <label data-i18n="form.institution">Institution</label>
+              <input type="text" name="institution" required placeholder="Chulalongkorn University" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="form.email">Email Address</label>
+              <input type="email" name="email" required placeholder="researcher@university.th" />
+            </div>
+            <div class="form-group">
+              <label data-i18n="form.service">Service of Interest</label>
+              <select name="service">
+                <option value="" data-i18n="form.select">Select a service</option>
+                <option value="16s" data-i18n="svc1.title">16S Amplicon Sequencing</option>
+                <option value="ngs" data-i18n="svc2.title">Next-Generation Sequencing</option>
+                <option value="tgs" data-i18n="svc3.title">Third-Generation Sequencing</option>
+                <option value="bioinfo" data-i18n="svc4.title">Bioinformatics Analysis</option>
+                <option value="other" data-i18n="form.other">Other / Not Sure</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group form-group--full">
+            <label data-i18n="form.message">Project Description</label>
+            <textarea name="message" rows="5" placeholder="Briefly describe your project, sample type, and expected number of samples..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--submit" data-i18n="form.submit">Send Request</button>
+          <p class="form__note" data-i18n="form.note">We typically respond within 1 business day.</p>
+        </form>
+        <div class="contact__info">
+          <div class="contact__info-block">
+            <div class="contact__info-label" data-i18n="info.email">Email</div>
+            <a href="mailto:syngen.th@gmail.com" class="contact__info-value">syngen.th@gmail.com</a>
+          </div>
+          <div class="contact__info-block">
+            <div class="contact__info-label" data-i18n="info.phone">Phone</div>
+            <a href="tel:+8615838774534" class="contact__info-value">+86 158 3877 4534</a>
+          </div>
+          <div class="contact__info-block">
+            <div class="contact__info-label" data-i18n="info.location">Location</div>
+            <div class="contact__info-value">Chiang Mai, Thailand</div>
+          </div>
+          <div class="contact__info-block">
+            <div class="contact__info-label" data-i18n="info.hours">Hours</div>
+            <div class="contact__info-value" data-i18n="info.hours.val">Mon–Fri, 8:00–19:00 ICT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="logo-white.png" alt="SynGen" class="footer__logo-img" />
+          </div>
+          <p class="footer__tagline" data-i18n="footer.tagline">Genomic Sequencing Services<br>Chiang Mai, Thailand</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <div class="footer__col-title" data-i18n="footer.services">Services</div>
+            <a href="#services" data-i18n="svc1.title">16S Amplicon Sequencing</a>
+            <a href="#services" data-i18n="svc2.title">Next-Generation Sequencing</a>
+            <a href="#services" data-i18n="svc3.title">Third-Generation Sequencing</a>
+            <a href="#services" data-i18n="svc4.title">Bioinformatics Analysis</a>
+          </div>
+          <div class="footer__col">
+            <div class="footer__col-title" data-i18n="footer.company">Company</div>
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#process" data-i18n="nav.process">Process</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 SynGen Co., Ltd. All rights reserved.</span>
+        <span data-i18n="footer.copy">Registered in Thailand</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
